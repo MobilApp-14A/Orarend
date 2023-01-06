@@ -11,5 +11,9 @@ namespace Orarend.Models
         public string nev { get; set; }
         public string tanar { get; set; }
         public string terem { get; set; }
+        public int oraTol { get; set; }
+        public int percTol { get; set; }
+        public int oraIg { get; set; }
+        public int percIg { get; set; }
     }
 }

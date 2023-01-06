@@ -3,12 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:costum_components="clr-namespace:Orarend.Components"
              x:Class="Orarend.MainPage"
-             xmlns:viewmodels="clr-namespace:Orarend"
              xmlns:local="clr-namespace:MApp" 
              x:Name="this"
              BindingContext="{x:Reference this}">
     <FlexLayout>
-        <Grid RowDefinitions="Auto, Auto, *">
+        <Grid>
             <VerticalStackLayout HorizontalOptions="Center">
                 <HorizontalStackLayout Margin="0, 20, 0, 0">
                     <Label Text="#1"/>
