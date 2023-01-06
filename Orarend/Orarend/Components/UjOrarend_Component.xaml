@@ -6,7 +6,7 @@
 
         <StackLayout>
             <Border Margin="0, 15, 0, 15"  Padding="10">
-                <Button BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                <Button Clicked="Button_Clicked" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
             </Border>
         </StackLayout>
 
