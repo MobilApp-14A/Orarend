@@ -48,4 +48,22 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Components\UjOrarend_Component.xaml.cs">
+	    <DependentUpon>UjOrarend_Component.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Components\Orarend_Component.xaml.cs">
+	    <DependentUpon>Orarend_Component.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Components\UjOrarend_Component.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Components\Orarend_Component.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
