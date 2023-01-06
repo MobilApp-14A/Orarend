@@ -8,7 +8,6 @@ namespace Orarend.Models
 {
     internal class Orarend
     {
-        public string nev { get; set; } = string.Empty;
         public int orakHossza { get; set; } //percben
         public int szunetekHossza { get; set; }
         public int nagySzunetHossza { get; set; }
