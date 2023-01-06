@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orarend.Components.Orarend_Component">
+    <ContentView.Content>
+
+        <StackLayout>
+            <Border Margin="0, 15, 0, 15">
+                <Grid WidthRequest="300" Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10"/>
+                    <VerticalStackLayout Grid.Column="1">
+                        <Button BackgroundColor="Green" TextColor="White" Text="Módosítás"></Button>
+                        <Button BackgroundColor="Red" TextColor="White" Text="Törlés"></Button>
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+        </StackLayout>
+
+    </ContentView.Content>
+</ContentView>

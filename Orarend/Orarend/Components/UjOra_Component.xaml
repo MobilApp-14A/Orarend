@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orarend.Components.UjOra_Component">
+    <ContentView.Content>
+
+        <StackLayout>
+            <HorizontalStackLayout>
+                <Border BackgroundColor="#10FFFFFF">
+                    <VerticalStackLayout WidthRequest="120">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                            <Entry TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                            <Entry TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="2"></Entry>
+                                </Grid>
+                    </VerticalStackLayout>
+                </Border>
+                <Border BackgroundColor="#10FFFFFF">
+                    <VerticalStackLayout WidthRequest="200">
+                        <Grid>
+                            <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="140"/>
+                            </Grid.ColumnDefinitions>
+                            <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                            <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Border>
+            </HorizontalStackLayout>
+        </StackLayout>
+
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:costum_components="clr-namespace:Orarend.Components"
+             x:Class="Orarend.MainPage"
+             xmlns:local="clr-namespace:MApp" 
+             x:Name="this"
+             BindingContext="{x:Reference this}">
+    <FlexLayout>
+        <Grid>
+            <VerticalStackLayout HorizontalOptions="Center">
+                <HorizontalStackLayout Margin="0, 20, 0, 0">
+                    <Label Text="#1"/>
+                    <costum_components:Orarend_Component IsVisible="{Binding nemUres1}"/>
+                    <costum_components:UjOrarend_Component IsVisible="{Binding ures1}"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="#2"/>
+                    <costum_components:Orarend_Component IsVisible="{Binding nemUres2}"/>
+                    <costum_components:UjOrarend_Component IsVisible="{Binding ures2}"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="#3"/>
+                    <costum_components:Orarend_Component IsVisible="{Binding nemUres3}"/>
+                    <costum_components:UjOrarend_Component IsVisible="{Binding ures3}"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="#4"/>
+                    <costum_components:Orarend_Component IsVisible="{Binding nemUres4}"/>
+                    <costum_components:UjOrarend_Component IsVisible="{Binding ures4}"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </FlexLayout>
+
+</ContentPage>
