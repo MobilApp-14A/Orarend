@@ -5,59 +5,60 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Orarend
-build_property.ProjectDir = D:\Órarend\Orarend\Orarend\Orarend\
+build_property.ProjectDir = C:\Users\Dawee03\Desktop\Mobile\Orarend\Orarend\Orarend\
 
-[D:/Órarend/Orarend/Orarend/Orarend/App.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/AppShell.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/Components/Orarend_Component.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/Components/Orarend_Component.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.Components.Orarend_Component.xaml
 build_metadata.AdditionalFiles.TargetPath = Components\Orarend_Component.xaml
 build_metadata.AdditionalFiles.RelativePath = Components\Orarend_Component.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/Components/UjOrarend_Component.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/Components/UjOrarend_Component.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.Components.UjOrarend_Component.xaml
 build_metadata.AdditionalFiles.TargetPath = Components\UjOrarend_Component.xaml
 build_metadata.AdditionalFiles.RelativePath = Components\UjOrarend_Component.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/Components/UjOra_Component.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/Components/UjOra_Component.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.Components.UjOra_Component.xaml
 build_metadata.AdditionalFiles.TargetPath = Components\UjOra_Component.xaml
 build_metadata.AdditionalFiles.RelativePath = Components\UjOra_Component.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/MainPage.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/Pages/OrarendHozzaadasa.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/Pages/OrarendHozzaadasa.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.Pages.OrarendHozzaadasa.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\OrarendHozzaadasa.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\OrarendHozzaadasa.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/Resources/Styles/Colors.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/Órarend/Orarend/Orarend/Orarend/Resources/Styles/Styles.xaml]
+[C:/Users/Dawee03/Desktop/Mobile/Orarend/Orarend/Orarend/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Orarend.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
