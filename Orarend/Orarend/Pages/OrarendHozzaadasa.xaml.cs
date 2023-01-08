@@ -21,20 +21,27 @@ public partial class OrarendHozzaadasa : ContentPage
 
 	private void SwipeGestureRecognizer_LeftSwiped(object sender, SwipedEventArgs e)
 	{
-        nap = napok[napok.IndexOf(nap) + 1];
-        orarend.Children.Clear();
-        foreach (var item in childrens)
+        if(nap != "Péntek")
         {
-            orarend.Children.Add(item);
+            nap = napok[napok.IndexOf(nap) + 1];
+            orarend.Children.Clear();
+            foreach (var item in childrens)
+            {
+                orarend.Children.Add(item);
+            }
         }
     }
     private void SwipeGestureRecognizer_RightSwiped(object sender, SwipedEventArgs e)
     {
-        nap = napok[napok.IndexOf(nap) - 1];
-        orarend.Children.Clear();
-        foreach (var item in childrens)
+        if (nap != "Hétfő")
         {
-            orarend.Children.Add(item);
+            nap = napok[napok.IndexOf(nap) - 1];
+            orarend.Children.Clear();
+            foreach (var item in childrens)
+            {
+                orarend.Children.Add(item);
+            }
         }
+
     }
 }
