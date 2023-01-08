@@ -1,1 +1,1 @@
-D:\Órarend\Orarend\Orarend\Orarend\Orarend.csproj;x64
+C:\Suli\Orarend\Orarend\Orarend\Orarend\Orarend.csproj;x64

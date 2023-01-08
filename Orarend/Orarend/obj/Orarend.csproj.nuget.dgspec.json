@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Órarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj": {}
+    "C:\\Suli\\Orarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj": {}
   },
   "projects": {
-    "D:\\Órarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj": {
+    "C:\\Suli\\Orarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Órarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj",
+        "projectUniqueName": "C:\\Suli\\Orarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj",
         "projectName": "Orarend",
-        "projectPath": "D:\\Órarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Órarend\\Orarend\\Orarend\\Orarend\\obj\\",
+        "projectPath": "C:\\Suli\\Orarend\\Orarend\\Orarend\\Orarend\\Orarend.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Suli\\Orarend\\Orarend\\Orarend\\Orarend\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[6.0.486, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -133,6 +137,10 @@
               "target": "Package",
               "version": "[6.0.1, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -182,6 +190,10 @@
               "target": "Package",
               "version": "[6.0.1, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -233,6 +245,10 @@
               "target": "Package",
               "version": "[10.0.22000.194, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
