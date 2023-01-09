@@ -16,17 +16,23 @@ namespace Orarend.Data
         public Database(string dbPath)
         {
             connection = new SQLiteAsyncConnection(dbPath);
-            connection.CreateTableAsync<Ora>().Wait();
+            connection.CreateTableAsync<List<Nap>>().Wait();
         }
 
-        internal void OrarendMentes(Ora orarend)
+        public void NapokHozzaadasa(List<Nap> napok)
         {
-            connection.InsertAsync(orarend);
+            connection.InsertAsync(napok);
         }
 
-        internal bool OrarendTorles(Ora kivalasztott)
+        public bool NapTorlese(Nap kivalasztott)
         {
             return connection.DeleteAsync(kivalasztott).Result == 1;
         }
+
+        public ObservableCollection<Nap> NapokKilistazasa()
+        {
+            return new ObservableCollection<Nap>(connection.Table<Nap>().ToListAsync().Result);
+        }
+
     }
 }

@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Orarend.Models
 {
-    internal class Ora
+    public class Ora
     {
-        [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
+
         public string nev { get; set; }
         public string tanar { get; set; }
         public string terem { get; set; }
