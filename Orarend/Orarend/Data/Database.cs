@@ -16,15 +16,15 @@ namespace Orarend.Data
         public Database(string dbPath)
         {
             connection = new SQLiteAsyncConnection(dbPath);
-            connection.CreateTableAsync<Orarendek>().Wait();
+            connection.CreateTableAsync<Ora>().Wait();
         }
 
-        internal void OrarendMentes(Orarendek orarend)
+        internal void OrarendMentes(Ora orarend)
         {
             connection.InsertAsync(orarend);
         }
 
-        internal bool OrarendTorles(Orarendek kivalasztott)
+        internal bool OrarendTorles(Ora kivalasztott)
         {
             return connection.DeleteAsync(kivalasztott).Result == 1;
         }
