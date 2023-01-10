@@ -90,26 +90,33 @@ public partial class OrarendHozzaadasa : ContentPage
         }
     }
 
-    private void SwipeGestureRecognizer_RightSwiped(object sender, SwipedEventArgs e)
-    {
-        if (nap != "Hétfő")
-        {
-            nap = napokNeve[napokNeve.IndexOf(nap) - 1];
-            orarend.Children.Clear();
-            foreach (var item in childrens)
-            {
-                orarend.Children.Add(item);
-            }
-        }
-    }
-
     private void Button_Clicked(object sender, EventArgs e)
     {
+        SearchAllEntry(orarend);
+
+        List<Ora> orak = new();
+        for (int i = 0; i < 9; i++)
+        {
+            orak.Add(new Ora
+            {
+                oraTol = int.Parse(entrykTextje[0 + (i * 7)]),
+                percTol = int.Parse(entrykTextje[1 + (i * 7)]),
+                oraIg = int.Parse(entrykTextje[2 + (i * 7)]),
+                percIg = int.Parse(entrykTextje[3 + (i * 7)]),
+                nev = entrykTextje[4 + (i * 7)],
+                terem = entrykTextje[5 + (i * 7)],
+                tanar = entrykTextje[6 + (i * 7)],
+            });
+        }
+
+        napok.Add(new Nap
+        {
+            orak = orak
+        });
         Database[] orarendek = { App.Orarend1, App.Orarend2, App.Orarend3, App.Orarend4 };
         foreach (var nap in napok)
         {
             orarendek[_index-1].NapokHozzaadasa(nap);
         }
     }
-
 }
