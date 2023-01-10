@@ -9,7 +9,6 @@
     <FlexLayout>
         <Frame>
             <Frame.GestureRecognizers>
-                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_RightSwiped"/>
                 <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_LeftSwiped"/>
             </Frame.GestureRecognizers>
             <Grid>
