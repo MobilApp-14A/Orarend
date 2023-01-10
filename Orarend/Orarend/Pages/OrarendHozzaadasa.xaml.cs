@@ -1,5 +1,6 @@
 ﻿using Microsoft.Maui.Graphics.Text;
 using Orarend.Models;
+using System.Collections.ObjectModel;
 
 namespace Orarend.Pages;
 
@@ -13,7 +14,7 @@ public partial class OrarendHozzaadasa : ContentPage
 		"Csütörtök",
 		"Péntek"
 	};
-    public List<Nap> napok { get; set; } = new List<Nap>();
+    public ObservableCollection<Nap> napok { get; set; } = new ObservableCollection<Nap>();
     public List<string> entrykTextje { get; set; } = new List<string>();
     public bool mentheto { get; set; }
     public IView[] childrens;
@@ -101,6 +102,9 @@ public partial class OrarendHozzaadasa : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-        App.Orarend1.NapokHozzaadasa(napok);
+        foreach (var nap in napok)
+        {
+            App.Orarend1.NapokHozzaadasa(nap);
+        }
     }
 }

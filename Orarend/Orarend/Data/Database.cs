@@ -16,12 +16,12 @@ namespace Orarend.Data
         public Database(string dbPath)
         {
             connection = new SQLiteAsyncConnection(dbPath);
-            connection.CreateTableAsync<List<Nap>>().Wait();
+            connection.CreateTableAsync<Nap>().Wait();
         }
 
-        public void NapokHozzaadasa(List<Nap> napok)
+        public void NapokHozzaadasa(Nap nap)
         {
-            connection.InsertAsync(napok);
+            connection.InsertAsync(nap);
         }
 
         public bool NapTorlese(Nap kivalasztott)

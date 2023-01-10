@@ -20,7 +20,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                                         <Label Text="{Binding nap}"/>
-                    <Button Grid.Column="1" Text="Mentés" IsVisible="{Binding mentheto}"/>
+                        <Button Grid.Column="1" Text="Mentés" Clicked="Button_Clicked" IsVisible="{Binding mentheto}"/>
                     </Grid>
 
                     <StackLayout>

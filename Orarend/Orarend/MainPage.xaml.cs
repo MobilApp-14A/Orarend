@@ -1,11 +1,15 @@
-﻿namespace Orarend;
+﻿using Orarend.Data;
+using Orarend.Models;
+
+namespace Orarend;
 
 public partial class MainPage : ContentPage
 {
-    public bool ures1 { get; set; } = false;
-    public bool ures2 { get; set; } = true;
-    public bool ures3 { get; set; } = true;
-    public bool ures4 { get; set; } = true;
+    public bool ures1 { get; set; }
+    public int trya { get; set; }
+    public bool ures2 { get; set; }
+    public bool ures3 { get; set; }
+    public bool ures4 { get; set; }
     public bool nemUres1 {
         get 
         {
@@ -35,8 +39,27 @@ public partial class MainPage : ContentPage
     }
     public MainPage()
 	{
-		InitializeComponent();
-        this.BindingContext = this;
+        ures1 = App.Orarend1.NapokKilistazasa().ToList().Count() == 0;
+        ures2 = App.Orarend2.NapokKilistazasa().ToList().Count() == 0;
+        ures3 = App.Orarend3.NapokKilistazasa().ToList().Count() == 0;
+        ures4 = App.Orarend4.NapokKilistazasa().ToList().Count() == 0;
+        InitializeComponent();
+    }
+    private void Button_Clicked1(object sender, EventArgs e)
+    {
+
+    }
+    private void Button_Clicked2(object sender, EventArgs e)
+    {
+
+    }
+    private void Button_Clicked3(object sender, EventArgs e)
+    {
+
+    }
+    private void Button_Clicked4(object sender, EventArgs e)
+    {
+
     }
 }
 
