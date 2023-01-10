@@ -1,4 +1,5 @@
 ﻿using Microsoft.Maui.Graphics.Text;
+using Orarend.Data;
 using Orarend.Models;
 using System.Collections.ObjectModel;
 
@@ -19,12 +20,14 @@ public partial class OrarendHozzaadasa : ContentPage
     public bool mentheto { get; set; }
     public IView[] childrens;
     public string nap { get; set; } = "Hétfő";
-	public OrarendHozzaadasa()
+    public int _index { get; set; }
+    public OrarendHozzaadasa(int index)
 	{
 		InitializeComponent();
 		childrens = new IView[orarend.Children.Count()];
         orarend.Children.CopyTo(childrens, 0);
         mentheto = false;
+        _index = index;
     }
 
     private void SwipeGestureRecognizer_LeftSwiped(object sender, SwipedEventArgs e)
@@ -102,9 +105,11 @@ public partial class OrarendHozzaadasa : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
+        Database[] orarendek = { App.Orarend1, App.Orarend2, App.Orarend3, App.Orarend4 };
         foreach (var nap in napok)
         {
-            App.Orarend1.NapokHozzaadasa(nap);
+            orarendek[_index-1].NapokHozzaadasa(nap);
         }
     }
+
 }

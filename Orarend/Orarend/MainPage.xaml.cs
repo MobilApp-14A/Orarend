@@ -1,5 +1,6 @@
 ﻿using Orarend.Data;
 using Orarend.Models;
+using Orarend.Pages;
 
 namespace Orarend;
 
@@ -59,6 +60,22 @@ public partial class MainPage : ContentPage
     private void Button_Clicked4(object sender, EventArgs e)
     {
 
+    }
+    private async void NewBtn1(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(1));
+    }
+    private async void NewBtn2(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(2));
+    }
+    private async void NewBtn3(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(3));
+    }
+    private async void NewBtn4(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(4));
     }
 }
 

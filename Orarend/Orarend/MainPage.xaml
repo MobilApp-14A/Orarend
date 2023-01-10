@@ -23,7 +23,9 @@
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures1}"/>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures1}">
+                        <Button Clicked="NewBtn1" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout ClassId="2">
                     <Label Text="#2"/>
@@ -40,7 +42,9 @@
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures2}"/>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures2}">
+                        <Button Clicked="NewBtn2" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout ClassId="3">
                     <Label Text="#3"/>
@@ -57,7 +61,9 @@
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures3}"/>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures3}">
+                        <Button Clicked="NewBtn3" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout ClassId="4">
                     <Label Text="#4"/>
@@ -74,10 +80,11 @@
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures4}"/>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures4}">
+                        <Button Clicked="NewBtn4" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Grid>
     </FlexLayout>
-
 </ContentPage>
