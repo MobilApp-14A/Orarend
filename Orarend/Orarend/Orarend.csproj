@@ -56,9 +56,6 @@
 	  <Compile Update="Components\UjOra_Component.xaml.cs">
 	    <DependentUpon>UjOra_Component.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Components\UjOrarend_Component.xaml.cs">
-	    <DependentUpon>UjOrarend_Component.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="Components\Orarend_Component.xaml.cs">
 	    <DependentUpon>Orarend_Component.xaml</DependentUpon>
 	  </Compile>
@@ -66,9 +63,6 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Components\UjOra_Component.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Components\UjOrarend_Component.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Components\Orarend_Component.xaml">
