@@ -4,51 +4,54 @@ namespace Orarend;
 
 public partial class App : Application
 {
-    static Database database;
+    static Database database1;
+    static Database database2;
+    static Database database3;
+    static Database database4;
 
 
     public static Database Orarend1
     {
         get
         {
-            if (database == null)
+            if (database1 == null)
             {
-               database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend1.db3"));
+               database1 = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend1.db3"));
             }
-            return database;
+            return database1;
         }
     }
     public static Database Orarend2
     {
         get
         {
-            if (database == null)
+            if (database2 == null)
             {
-                database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend2.db3"));
+                database2 = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend2.db3"));
             }
-            return database;
+            return database2;
         }
     }
     public static Database Orarend3
     {
         get
         {
-            if (database == null)
+            if (database3 == null)
             {
-                database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend3.db3"));
+                database3 = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend3.db3"));
             }
-            return database;
+            return database3;
         }
     }
     public static Database Orarend4
     {
         get
         {
-            if (database == null)
+            if (database4 == null)
             {
-                database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend4.db3"));
+                database4 = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Orarend4.db3"));
             }
-            return database;
+            return database4;
         }
     }
     public App()

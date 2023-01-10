@@ -6,7 +6,6 @@ namespace Orarend;
 public partial class MainPage : ContentPage
 {
     public bool ures1 { get; set; }
-    public int trya { get; set; }
     public bool ures2 { get; set; }
     public bool ures3 { get; set; }
     public bool ures4 { get; set; }

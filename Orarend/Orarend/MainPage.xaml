@@ -11,7 +11,6 @@
                 <HorizontalStackLayout Margin="0, 20, 0, 0" ClassId="1">
                     <Label Text="#1"/>
                     <StackLayout IsVisible="{Binding nemUres1}">
-                        <Label Text="{Binding trya}"/>
                         <Grid WidthRequest="300" Padding="10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
