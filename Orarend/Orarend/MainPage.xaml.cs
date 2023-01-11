@@ -77,5 +77,65 @@ public partial class MainPage : ContentPage
     {
         await Navigation.PushAsync(new OrarendHozzaadasa(4));
     }
+    private void Button_ClickedChange1(object sender, EventArgs e)
+    {
+
+
+    }
+
+    private void Button_ClickedDelete1(object sender, EventArgs e)
+    {
+        var delete = App.Orarend1.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend1.NapTorlese(item);
+
+        }
+    }
+
+    private void Button_ClickedChange2(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Button_ClickedDelete2(object sender, EventArgs e)
+    {
+        var delete = App.Orarend2.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend2.NapTorlese(item);
+
+        }
+    }
+
+    private void Button_ClickedChange3(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Button_ClickedDelete3(object sender, EventArgs e)
+    {
+        var delete = App.Orarend3.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend3.NapTorlese(item);
+
+        }
+    }
+
+    private void Button_ClickedChange4(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Button_ClickedDelete4(object sender, EventArgs e)
+    {
+        var delete = App.Orarend4.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend4.NapTorlese(item);
+
+        }
+    }
 }
 

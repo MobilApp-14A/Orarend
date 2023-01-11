@@ -18,8 +18,8 @@
                             </Grid.ColumnDefinitions>
                             <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked1"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás"></Button>
-                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés"></Button>
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange1"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete1"></Button>
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
@@ -37,8 +37,8 @@
                             </Grid.ColumnDefinitions>
                             <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked2"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás"></Button>
-                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés"></Button>
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange2"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete2"></Button>
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
@@ -56,8 +56,8 @@
                             </Grid.ColumnDefinitions>
                             <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked3"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás"></Button>
-                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés"></Button>
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange3"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete3"></Button>
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
@@ -75,8 +75,8 @@
                             </Grid.ColumnDefinitions>
                             <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked4"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás"></Button>
-                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés"></Button>
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange4"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete4"></Button>
                             </VerticalStackLayout>
                         </Grid>
                     </StackLayout>
