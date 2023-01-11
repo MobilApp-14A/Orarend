@@ -90,7 +90,7 @@ public partial class OrarendHozzaadasa : ContentPage
         }
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
         SearchAllEntry(orarend);
 
@@ -118,5 +118,6 @@ public partial class OrarendHozzaadasa : ContentPage
         {
             orarendek[_index-1].NapokHozzaadasa(nap);
         }
+        await Navigation.PushAsync(new MainPage());
     }
 }
