@@ -1,11 +1,15 @@
-﻿namespace Orarend;
+﻿using Orarend.Data;
+using Orarend.Models;
+using Orarend.Pages;
+
+namespace Orarend;
 
 public partial class MainPage : ContentPage
 {
-    public bool ures1 { get; set; } = false;
-    public bool ures2 { get; set; } = true;
-    public bool ures3 { get; set; } = true;
-    public bool ures4 { get; set; } = true;
+    public bool ures1 { get; set; }
+    public bool ures2 { get; set; }
+    public bool ures3 { get; set; }
+    public bool ures4 { get; set; }
     public bool nemUres1 {
         get 
         {
@@ -35,8 +39,103 @@ public partial class MainPage : ContentPage
     }
     public MainPage()
 	{
-		InitializeComponent();
-        this.BindingContext = this;
+        ures1 = App.Orarend1.NapokKilistazasa().ToList().Count() == 0;
+        ures2 = App.Orarend2.NapokKilistazasa().ToList().Count() == 0;
+        ures3 = App.Orarend3.NapokKilistazasa().ToList().Count() == 0;
+        ures4 = App.Orarend4.NapokKilistazasa().ToList().Count() == 0;
+        InitializeComponent();
+    }
+    private void Button_Clicked1(object sender, EventArgs e)
+    {
+
+    }
+    private void Button_Clicked2(object sender, EventArgs e)
+    {
+
+    }
+    private void Button_Clicked3(object sender, EventArgs e)
+    {
+
+    }
+    private void Button_Clicked4(object sender, EventArgs e)
+    {
+
+    }
+    private async void NewBtn1(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(1));
+    }
+    private async void NewBtn2(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(2));
+    }
+    private async void NewBtn3(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(3));
+    }
+    private async void NewBtn4(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new OrarendHozzaadasa(4));
+    }
+    private void Button_ClickedChange1(object sender, EventArgs e)
+    {
+
+
+    }
+
+    private void Button_ClickedDelete1(object sender, EventArgs e)
+    {
+        var delete = App.Orarend1.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend1.NapTorlese(item);
+
+        }
+    }
+
+    private void Button_ClickedChange2(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Button_ClickedDelete2(object sender, EventArgs e)
+    {
+        var delete = App.Orarend2.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend2.NapTorlese(item);
+
+        }
+    }
+
+    private void Button_ClickedChange3(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Button_ClickedDelete3(object sender, EventArgs e)
+    {
+        var delete = App.Orarend3.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend3.NapTorlese(item);
+
+        }
+    }
+
+    private void Button_ClickedChange4(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Button_ClickedDelete4(object sender, EventArgs e)
+    {
+        var delete = App.Orarend4.NapokKilistazasa();
+        foreach (var item in delete)
+        {
+            App.Orarend4.NapTorlese(item);
+
+        }
     }
 }
 
