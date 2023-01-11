@@ -86,18 +86,17 @@ public partial class MainPage : ContentPage
     private async void Button_ClickedDelete1(object sender, EventArgs e)
     {
         var delete = App.Orarend1.NapokKilistazasa();
-        foreach (var item in delete)
+        bool answer = await DisplayAlert("Törlés","Szeretné törölni ezt a Órarendet?", "Igen", "Nem");
+        if (answer)
         {
-            bool answer = await DisplayAlert("Törlés","Szeretné törölni ezt a Órarendet?", "Nem", "Igen");
-            if (answer)
+            foreach (var item in delete)
             {
                 App.Orarend1.NapTorlese(item);
             }
-            else
-            {
-                return;
-            }
-
+        }
+        else
+        {
+            return;
         }
     }
 
@@ -106,21 +105,20 @@ public partial class MainPage : ContentPage
 
     }
 
-    private async Task Button_ClickedDelete2Async(object sender, EventArgs e)
+    private async void Button_ClickedDelete2(object sender, EventArgs e)
     {
         var delete = App.Orarend2.NapokKilistazasa();
-        foreach (var item in delete)
+        bool answer = await DisplayAlert("Törlés", "Szeretné törölni ezt a Órarendet?", "Igen", "Nem");
+        if (answer)
         {
-            bool answer = await DisplayAlert("Törlés", "Szeretné törölni ezt a Órarendet?", "Nem", "Igen");
-            if (answer)
+            foreach (var item in delete)
             {
                 App.Orarend2.NapTorlese(item);
             }
-            else
-            {
-                return;
-            }
-
+        }
+        else
+        {
+            return;
         }
     }
 
@@ -129,21 +127,20 @@ public partial class MainPage : ContentPage
 
     }
 
-    private async Task Button_ClickedDelete3Async(object sender, EventArgs e)
+    private async void Button_ClickedDelete3(object sender, EventArgs e)
     {
         var delete = App.Orarend3.NapokKilistazasa();
-        foreach (var item in delete)
+        bool answer = await DisplayAlert("Törlés", "Szeretné törölni ezt a Órarendet?", "Igen", "Nem");
+        if (answer)
         {
-            bool answer = await DisplayAlert("Törlés", "Szeretné törölni ezt a Órarendet?", "Nem", "Igen");
-            if (answer)
+            foreach (var item in delete)
             {
                 App.Orarend3.NapTorlese(item);
             }
-            else
-            {
-                return;
-            }
-
+        }
+        else
+        {
+            return;
         }
     }
 
@@ -152,21 +149,20 @@ public partial class MainPage : ContentPage
 
     }
 
-    private async Task Button_ClickedDelete4Async(object sender, EventArgs e)
+    private async void Button_ClickedDelete4(object sender, EventArgs e)
     {
         var delete = App.Orarend4.NapokKilistazasa();
-        foreach (var item in delete)
+        bool answer = await DisplayAlert("Törlés", "Szeretné törölni ezt a Órarendet?", "Igen", "Nem");
+        if (answer)
         {
-            bool answer = await DisplayAlert("Törlés", "Szeretné törölni ezt a Órarendet?", "Nem", "Igen");
-            if (answer)
+            foreach (var item in delete)
             {
                 App.Orarend4.NapTorlese(item);
             }
-            else
-            {
-                return;
-            }
-
+        }
+        else
+        {
+            return;
         }
     }
 }
