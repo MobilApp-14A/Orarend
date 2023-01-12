@@ -3,34 +3,88 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:costum_components="clr-namespace:Orarend.Components"
              x:Class="Orarend.MainPage"
-             xmlns:local="clr-namespace:MApp" 
              x:Name="this"
              BindingContext="{x:Reference this}">
     <FlexLayout>
         <Grid>
             <VerticalStackLayout HorizontalOptions="Center">
-                <HorizontalStackLayout Margin="0, 20, 0, 0">
+                <HorizontalStackLayout Margin="0, 20, 0, 0" ClassId="1">
                     <Label Text="#1"/>
-                    <costum_components:Orarend_Component IsVisible="{Binding nemUres1}"/>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures1}"/>
+                    <StackLayout IsVisible="{Binding nemUres1}">
+                        <Grid WidthRequest="300" Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked1"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange1"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete1"></Button>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </StackLayout>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures1}">
+                        <Button Clicked="NewBtn1" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
-                <HorizontalStackLayout>
+                <HorizontalStackLayout ClassId="2">
                     <Label Text="#2"/>
-                    <costum_components:Orarend_Component IsVisible="{Binding nemUres2}"/>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures2}"/>
+                    <StackLayout IsVisible="{Binding nemUres2}">
+                        <Grid WidthRequest="300" Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked2"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange2"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete2"></Button>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </StackLayout>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures2}">
+                        <Button Clicked="NewBtn2" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
-                <HorizontalStackLayout>
+                <HorizontalStackLayout ClassId="3">
                     <Label Text="#3"/>
-                    <costum_components:Orarend_Component IsVisible="{Binding nemUres3}"/>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures3}"/>
+                    <StackLayout IsVisible="{Binding nemUres3}">
+                        <Grid WidthRequest="300" Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked3"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange3"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete3"></Button>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </StackLayout>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures3}">
+                        <Button Clicked="NewBtn3" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
-                <HorizontalStackLayout>
+                <HorizontalStackLayout ClassId="4">
                     <Label Text="#4"/>
-                    <costum_components:Orarend_Component IsVisible="{Binding nemUres4}"/>
-                    <costum_components:UjOrarend_Component IsVisible="{Binding ures4}"/>
+                    <StackLayout IsVisible="{Binding nemUres4}">
+                        <Grid WidthRequest="300" Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Button FontSize="40" Text="&#128198;" Margin="60, 10, 0, 10" BackgroundColor="Transparent" BorderWidth="0" Clicked="Button_Clicked4"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Button BackgroundColor="Green" TextColor="White" Text="Módosítás" Clicked="Button_ClickedChange4"></Button>
+                                <Button BackgroundColor="Red" TextColor="White" Text="Törlés" Clicked="Button_ClickedDelete4"></Button>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </StackLayout>
+                    <Border Margin="0, 15, 0, 15" Padding="10" IsVisible="{Binding ures4}">
+                        <Button Clicked="NewBtn4" BackgroundColor="Black" BorderWidth="0" TextColor="White" WidthRequest="280" Text="+" FontSize="30"/>
+                    </Border>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Grid>
     </FlexLayout>
-
 </ContentPage>

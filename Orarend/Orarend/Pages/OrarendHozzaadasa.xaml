@@ -9,22 +9,429 @@
     <FlexLayout>
         <Frame>
             <Frame.GestureRecognizers>
-                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_RightSwiped"/>
                 <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_LeftSwiped"/>
             </Frame.GestureRecognizers>
             <Grid>
         <VerticalStackLayout HorizontalOptions="Center" x:Name="orarend">
-                <Label Text="{Binding nap}"/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-                <costum_components:UjOra_Component/>
-            </VerticalStackLayout>
+                    <Grid WidthRequest="320">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding nap}"/>
+                        <Button Grid.Column="1" Text="Mentés" Clicked="Button_Clicked" IsVisible="{Binding mentheto}"/>
+                    </Grid>
+
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="8" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="00" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="8" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="45" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="8" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="55" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="9" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="40" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF"  Text="9" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF"  Text="50" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="10" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="35" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="10" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="50" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="11" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="35" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="11" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="45" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="12" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="30" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="12" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="40" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="13" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="25" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="13" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="35" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="14" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="20" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="14" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="30" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="15" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="15" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                    <StackLayout>
+                        <HorizontalStackLayout HeightRequest="52">
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout HeightRequest="50" WidthRequest="120">
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="15" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="25" Grid.Column="2"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="3" Text="-"/>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="16" Grid.Column="0"></Entry>
+                                    <Label WidthRequest="2" Grid.Column="1" Text=":"/>
+                                    <Entry TextColor="Black" BackgroundColor="#FFFFFF" Text="10" Grid.Column="2"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                            <!--<Border BackgroundColor="#10FFFFFF">-->
+                            <VerticalStackLayout WidthRequest="200">
+                                <Grid HeightRequest="25">
+                                    <Entry Placeholder="Óra neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                </Grid>
+                                <Grid HeightRequest="25">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="140"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Placeholder="Terem" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="0"></Entry>
+                                    <Entry Placeholder="Tanár neve" TextColor="Black" BackgroundColor="#FFFFFF" Grid.Column="1"></Entry>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <!--</Border>-->
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </VerticalStackLayout>
         </Grid>
         </Frame>
     </FlexLayout>
